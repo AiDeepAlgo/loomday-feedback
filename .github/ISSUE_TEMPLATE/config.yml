@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: "דיווח ללא חשבון GitHub / Google Form"
+    url: https://forms.gle/DXjM1YGpavqRd7RQA
+    about: "שלחו תקלה או בקשה לשיפור דרך טופס Google. הדיווחים עוברים מיון ידני."
