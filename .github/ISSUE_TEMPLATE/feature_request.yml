@@ -1,0 +1,38 @@
+name: "בקשה לשיפור / Feature request"
+description: "רעיון או צורך ש־LoomDay יכולה לתת לו מענה."
+title: "[Feature] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **זוהי בקשה ציבורית — Public request.** אין לכלול כתובות דוא״ל, סיסמאות, טוקנים או מידע אישי, גם בקבצים מצורפים.
+        כתבו בכותרת למעלה תיאור קצר של הרעיון. אפשר למלא בעברית או באנגלית.
+  - type: textarea
+    id: need
+    attributes:
+      label: "מה הצורך או הקושי? / Problem or need"
+      description: "מה אתם מנסים לעשות, ואיפה חסר לכם מענה היום?"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "מה הייתם רוצים? / Suggested improvement"
+      description: "תארו בקצרה את השיפור. אין צורך בפתרון טכני."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "הקשר נוסף — רשות / Optional context"
+      description: "אפשר לתת דוגמה, להסביר למי זה יעזור או לצרף המחשה ללא מידע אישי."
+    validations:
+      required: false
+  - type: checkboxes
+    id: public-report
+    attributes:
+      label: "לפני שליחה / Before submitting"
+      options:
+        - label: "ברור לי שהבקשה והקבצים ציבוריים, ובדקתי שאינם כוללים מידע אישי או סודות. / I understand this request is public and have removed personal data and secrets."
+          required: true

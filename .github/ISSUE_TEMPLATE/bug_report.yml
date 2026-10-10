@@ -1,0 +1,84 @@
+name: "דיווח על תקלה / Bug report"
+description: "משהו לא עבד כצפוי ב־LoomDay ל־Android."
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **זהו דיווח ציבורי — Public report.** אין לכלול כתובות דוא״ל, סיסמאות, טוקנים או מידע אישי. בדקו וטשטשו צילומי מסך ולוגים לפני העלאה.
+        כתבו בכותרת למעלה תיאור קצר, ודווחו על תקלה אחת. אפשר למלא בעברית או באנגלית. אם פרט אינו ידוע, כתבו ״לא ידוע״.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "מה קרה? / What happened?"
+      description: "מה ניסיתם לעשות ומה קרה בפועל?"
+      placeholder: "לדוגמה: אחרי שינוי התאריך, המשימה נעלמה מהרשימה."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "איך משחזרים? / Steps to reproduce"
+      description: "רשמו את הצעדים לפי הסדר. אם אינכם יודעים לשחזר, תארו מה עשיתם לפני התקלה."
+      placeholder: |
+        1. פתחתי...
+        2. לחצתי על...
+        3. הופיעה התקלה...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "מה ציפיתם שיקרה? / Expected behavior"
+      placeholder: "לדוגמה: שהמשימה תופיע בתאריך שבחרתי."
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: "גרסת LoomDay / App version"
+      description: "הגרסה המותקנת במכשיר; אם אינה ידועה, כתבו ״לא ידוע״."
+      placeholder: "מספר גרסה, או לא ידוע"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: "דגם המכשיר / Device model"
+      placeholder: "לדוגמה: Samsung Galaxy S23"
+    validations:
+      required: true
+  - type: input
+    id: android-version
+    attributes:
+      label: "גרסת Android / Android version"
+      description: "אפשר למצוא בהגדרות המכשיר, תחת מידע על הטלפון."
+      placeholder: "לדוגמה: Android 14"
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: "באיזו תדירות? / Frequency"
+      options:
+        - "בכל ניסיון / Every time"
+        - "לפעמים / Sometimes"
+        - "קרה פעם אחת / Once"
+        - "לא ידוע / Not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "צילום מסך או לוג — רשות / Optional screenshots or logs"
+      description: "אפשר לצרף קבצים כאן. יומן האבחון זמין בתפריט היום / Today. לפני צירוף, בדקו והסירו מידע אישי, כתובות דוא״ל וטוקנים. אפשר לדווח גם בלי קבצים."
+    validations:
+      required: false
+  - type: checkboxes
+    id: public-report
+    attributes:
+      label: "לפני שליחה / Before submitting"
+      options:
+        - label: "ברור לי שהדיווח והקבצים ציבוריים, ובדקתי שאינם כוללים מידע אישי או סודות. / I understand this report is public and have removed personal data and secrets."
+          required: true
